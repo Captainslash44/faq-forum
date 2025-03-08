@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__."../connection/connection.php";
+require __DIR__."/connection/connection.php";
 
 $query = ("CREATE TABLE faqs(
             id INT(11) AUTO_INCREMENT PRIMARY KEY,
