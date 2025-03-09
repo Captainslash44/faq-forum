@@ -95,6 +95,18 @@ input:focus{
     margin-bottom: 1em;
 }
 
+.margin-top-small{
+    margin-top: 1em;
+}
+
+.side-margin{
+    margin: 0 1em;
+}
+
+.full-width{
+    width:100%;
+}
+
 .padding-one{
     padding: 1em;
 }
@@ -149,7 +161,7 @@ button:hover{
 }
 
 
-/* ------------------------------------------Sign In----------------------------------------- */
+/* ------------------------------------------Sign Up----------------------------------------- */
 
 
 .signup-form{
@@ -171,3 +183,46 @@ button:hover{
         font-size: 0.7em;
     }
 }
+
+
+/* ------------------------------------------ HOME ----------------------------------------- */
+
+.search-bar{
+    width: 40vw;
+    margin: 3em 0;
+    height: 3em;
+}
+
+.cards-container{
+    margin-top: 2em;
+}
+
+.cards-container div{
+    width: 20vw;
+    flex-grow: 1;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+
+.cards-container p {
+    text-wrap: wrap;
+}
+
+.add-button{
+    width: 3em;
+    height: 3em;
+    margin-left: 0.5em;
+}
+
+.icon{
+    background: url("../assets/search.svg") no-repeat right;
+    background-color: #FFFFFF;
+    padding-right: 25px;
+}
+
+.add-button:hover{
+    background-color: #B03052;
+    box-shadow: white;
+    
+}
+
