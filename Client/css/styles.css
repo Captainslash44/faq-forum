@@ -91,6 +91,10 @@ input:focus{
     margin: 1em 0;
 }
 
+.margin-bottom-one{
+    margin-bottom: 1em;
+}
+
 .padding-one{
     padding: 1em;
 }
@@ -105,6 +109,10 @@ input:focus{
 
 button{
     font-weight: 700;
+}
+
+ul{
+    list-style: none;
 }
 
 @font-face {
@@ -141,3 +149,25 @@ button:hover{
 }
 
 
+/* ------------------------------------------Sign In----------------------------------------- */
+
+
+.signup-form{
+    height: 70vh;
+    width: 35vw;
+}
+
+.signup-form p {
+    font-size: 0.8em;
+}
+
+.signup-form li{
+    width: 100%;
+}
+
+@media (max-width: 800px){
+
+    .signup-form{
+        font-size: 0.7em;
+    }
+}
