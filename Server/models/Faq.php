@@ -1,7 +1,7 @@
 <?php
 
 require("FaqSkeleton.php");
-require("../connection/connection.php");
+require("../../connection/connection.php");
 
 
 class Faq extends FaqSkeleton{

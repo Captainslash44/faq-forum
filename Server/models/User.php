@@ -13,12 +13,12 @@ class User extends UserSkeleton{
         $query->execute();
 
         $response = $query->get_result();
-        if ($response == NULL){
-            return ["id" => -1];
+        $answer = $response->fetch_assoc();
+        if ($answer != NULL){
+            return ["id" => $answer["id"]];
         }else{
-            return ["id" => $response->fetch_assoc()["id"]];
-        };
-        
+            return ["id" => -1];
+        }
     }
 
     public static function saveUser(){
@@ -55,12 +55,25 @@ class User extends UserSkeleton{
         $query->execute();
 
         $response = $query->get_result();
-        $answer = $response->fetch_assoc()["password"];
+        if($response->fetch_assoc() != NULL){
+            $answer = $response->fetch_assoc()["password"];
+        }else{
+            return false;
+        }
         
         return password_verify($password, $answer)? true : false;
     }
 
+    public static function loadUserName($user_id){
+        global $conn;
 
+        $query = $conn->prepare("SELECT full_name FROM users where id =?");
+        $query->bind_param("i", $user_id);
+        $query->execute();
+
+        $response = $query->get_result();
+        return $response->fetch_assoc()["full_name"];
+    }
 };
 
 ?>
