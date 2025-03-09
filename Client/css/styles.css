@@ -119,6 +119,10 @@ input:focus{
     color: #000000;
 }
 
+.bold-text{
+    font-weight: 800;
+}
+
 button{
     font-weight: 700;
 }
@@ -226,3 +230,22 @@ button:hover{
     
 }
 
+/* ------------------------------------------ FAQ ----------------------------------------- */
+
+.faq-input{
+    height: 10em;
+    padding: 1em;
+}
+
+.faq-form{
+    height: 80vh;
+    width: 40vw;
+}
+
+.faq-container{
+    height: 85%;
+}
+
+textarea{
+    font-size: large;
+}
