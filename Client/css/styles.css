@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,6 +16,18 @@ body{
 
 .secondary-bg{
     background-color:#FFFFFF ;
+}
+
+.grey-bg{
+    background-color: #EBE8DB;
+}
+
+.black-border{
+    border-color: black;
+}
+
+.solid-border{
+    border-style: solid;
 }
 
 .flex{
@@ -47,6 +60,84 @@ body{
 
 .center-text{
     text-align: center;
+}
+
+.rounded-border{
+    border-radius: 5px;
+}
+
+input{
+    border-width: thin;
+    outline: none;
+    height: 2.5em;
+    padding: .5em;
+}
+
+input:focus{
+    border-width: medium;
+    border-color: #000000;
+    border-style: solid;
+}
+
+.mont-font{
+    font-family: "Montserrat";
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.margin-one{
+    margin: 1em 0;
+}
+
+.padding-one{
+    padding: 1em;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.text-black{
+    color: #000000;
+}
+
+button{
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Client/assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+button:hover{
+    color: #000000;
+    background-color: #FFFFFF;
+    border:none;
+}
+
+/* ------------------------------------------Sign In----------------------------------------- */
+
+.login-form{
+    height: 50vh;
+    width: 25vw;
+}
+
+.login-button{
+    height: 2.5em;
+}
+
+.login-form p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 800px){
+
+    .login-form{
+        font-size: 0.7em;
+    }
 }
 
 
