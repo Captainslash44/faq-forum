@@ -203,6 +203,7 @@ button:hover{
 
 .cards-container div{
     width: 25vw;
+    height: 45vh;
     flex-grow: 1;
     word-wrap: break-word;
     text-wrap: wrap;
