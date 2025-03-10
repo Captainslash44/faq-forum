@@ -1,5 +1,8 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Headers: *');
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Content-Type: application/json; charset=UTF-8");
 include("UserSkeleton.php");
 include("../../connection/connection.php");
 
@@ -55,7 +58,8 @@ class User extends UserSkeleton{
         $query->execute();
 
         $response = $query->get_result();
-        if($response->fetch_assoc() != NULL){
+        
+        if($response != NULL){
             $answer = $response->fetch_assoc()["password"];
         }else{
             return false;

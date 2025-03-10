@@ -14,18 +14,20 @@
         <div class="flex column space-between">
             <div class="flex column margin-one">
                 <label for="" class="login-label">Email</label>
-                <input type="email" placeholder="Email" class="login-input rounded-border">
+                <input type="email" placeholder="Email" id="email" class="login-input rounded-border">
             </div>
             <div class="flex column margin-one">
                 <label for="" class="login-label">Password</label>
-                <input type="password" placeholder="Password" class="login-input rounded-border">
+                <input type="password" placeholder="Password" id="password" class="login-input rounded-border">
             </div>
             
-            <button class="login-button primary-bg text-white mont-font rounded-border">signin</button>
+            <button class="login-button primary-bg text-white mont-font rounded-border" id="signin-button">signin</button>
         </div>
         <footer class="margin-one">
             <p>Don't have an account? <a class="text-black" href="signup.html">register</a></p>
         </footer>
     </form>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.8.2/dist/axios.min.js"></script>
+<script src="JS/login.js"></script>
 </html>

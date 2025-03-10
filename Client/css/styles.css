@@ -202,7 +202,7 @@ button:hover{
 }
 
 .cards-container div{
-    width: 20vw;
+    width: 25vw;
     flex-grow: 1;
     word-wrap: break-word;
     text-wrap: wrap;

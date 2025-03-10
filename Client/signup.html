@@ -15,26 +15,28 @@
             <ul class="flex column wrap">
                 <li class="flex column margin-bottom-one">
                     <label for="">Full Name</label>
-                    <input type="text" placeholder="Full Name" class="rounded-border">
+                    <input type="text" placeholder="Full Name" class="rounded-border" id="fullname">
                 </li>
                 <li class="flex column margin-bottom-one">
                     <label for="">Email</label>
-                    <input type="text" placeholder="Email" class="rounded-border">
+                    <input type="text" placeholder="Email" class="rounded-border" id="email">
                 </li>
                 <li class="flex column margin-bottom-one">
                     <label for="">Password</label>
-                    <input type="text" placeholder="Password" class="rounded-border">
+                    <input type="password" placeholder="Password" class="rounded-border" id="pass">
                 </li>
                 <li class="flex column margin-bottom-one">
                     <label for="">Confirm Password</label>
-                    <input type="text" placeholder="Confirm password" class="rounded-border">
+                    <input type="password" placeholder="Confirm password" class="rounded-border" id="pass-confirm">
                 </li>
             </ul>
-            <button class="login-button primary-bg text-white mont-font rounded-border">Sign up</button>
+            <button class="login-button primary-bg text-white mont-font rounded-border" id="signup-button">Sign up</button>
         </div>
         <footer>
             <p>Already Signed up? <a class="text-black" href="index.html">Login</a></p>
         </footer>
     </form>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.8.2/dist/axios.min.js"></script>
+<script src="JS/register.js"></script>
 </html>
