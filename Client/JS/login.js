@@ -18,8 +18,8 @@ signin_button.addEventListener("click", (e) =>{
     data.append("password", password);
 
     const checkLogin = async () =>{
-        const response = await axios.post(base_api + "faq-forum/Server/apis/v1/login.php");
-        if (response.data.id > 0){
+        const response = await axios.post(base_api + "faq-forum/Server/apis/v1/login.php", data);
+        if (response.data.id != -1){
             localStorage.setItem("id", response.data.id);
             window.location.href = "./home.html";
         }else{

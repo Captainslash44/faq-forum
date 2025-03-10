@@ -28,3 +28,13 @@ add_button.addEventListener("click",(e) =>{
 
 });
 
+const logout_btn = document.getElementById("logout-btn");
+
+logout_btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    localStorage.clear();
+    window.location.href = "./index.html";
+
+})
+
